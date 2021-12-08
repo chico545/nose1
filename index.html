@@ -2,67 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drag Race Simulator</title>
-    <link href="icofont/icofont.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/style.light.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-    
+    <link id="style" rel="stylesheet" href="css/style.light.css">
+    <link rel="icon" href="image/favicon.ico">
+    <title>Jorges ultimate simulator</title>
 </head>
 <body>
-    <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">This simulator was created by <a href="https://edssb.github.io/rupauls-drag-race-simulator/index.html" target=_blank>edssb/JustALittleKiller</a></li>
-                <li class="sidebar-nav-item"><a href="index.html">Star your simulation</a></li>
-                <li class="sidebar-nav-item"><a href="predef.html">Predef Casts</a></li>
-                <li class="sidebar-nav-item"><a href="custom.html">Custom</a></li>
-            </ul>
-        </nav>
+    <h1 id="MainTitle">Jorges ultimate simulator</h1>
+    
     <div id="MainBlock">
-        <h1>Drag Race Simulator!</h1>
-        <p><big>This is you chance to simulate a drag race season with all your favourite queens!</big></p>
+        <p><big>Simulate a fictional Drag Race season and see what happens!</big></p>
         <p>
-            How many queens do you want in your cast?
+            How many queens do you want on your cast?
             <br>
-            <input type="number" min="3" max="20" id="castSize" placeholder="Max 20">
-            <button onclick="generateSpace()">Okurr</button>
+            <input type="number" min="3" max="20" id="castSize">
+            <button onclick="generateSpace()">Select</button>
         </p>
         
         <p id="castSelection"></p>
 
-        <p>Choose your premiere format: </p>
+        <p>Select your premiere format: </p>
         <select id="premiere-format">
-            <option>Normal Premiere</option>
-            <option value="s6-premiere">Season 6 Premiere</option>
-            <option value="s12-premiere">Season 12 Premiere</option>
-            <option value="porkchop">Season 13 Premiere</option>
+            <option>Normal premiere</option>
+            <option value="s6-premiere">Double Premiere</option>
+            <option value="s12-premiere">Double Premiere (No Elimination)</option>
+            <option value="porkchop">Porkchop Premiere</option>
         </select>
             
-        <p>Choose your finale format: </p>
+        <p>Select your finale format: </p>
         <select id="format">
-            <option value="top3">Top 3</option>
-            <option value="top4">Lipsync For The Crown</option>
-            <option value="team">Teams</option>
-            <option value="all-stars">Lipsync For Your Legacy</option>
-            <option value="lipsync-assassin">Lipsync Assassin</option>
+            <option value="top3">Top 3 Format</option>
+            <option value="top4">Lip-Sync For The Crown</option>
+            <option value="team">Teams Format</option>
+            <option value="all-stars">Lip-Sync For Your Legacy</option>
+            <option value="lipsync-assassin">Lip-Sync Assassin Format</option>
         </select>
 
-        <p><button onclick="startSimulation()" style="font-size: 40px;">Let's Simulate!</button></p>
+        <p><button onclick="startSimulation()">Simulate now!</button></p>
         
-        <p><input type="checkbox" id="disableDouble"> Disable double shantays and sashays</p>
-        <p><input type="checkbox" id="disableReturn"> Disable queens returning</p>
-        <p class="credits">This simulator was created by <a href="https://edssb.github.io/rupauls-drag-race-simulator/index.html" target=_blank>edssb/JustALittleKiller</a> and I'm only doing updates until they come back</p>
+        <input type="checkbox" id="disableDouble"> Disable double shantays and sashays
+        <input type="checkbox" id="disableReturn"> Disable queens returning
+
+        <hr>
+
+        <big>More options!</big>
+
+        <div>
+            <p>
+            <big><a href="predef.html" id="inblock">Predefined casts</a></big>
+            </p>
+            <p>
+            <big><a href="custom.html" id="inblock">Custom</a></big>
+            </p>
+        </div>
+
+        <hr>
+
+        <big>Simulator's progress</big>
+        <div>
+            <p>
+            <big><a href="https://github.com/edssb/rupauls-drag-race-simulator/blob/main/CHANGELOG.md" id="inblock" target="_blank">Changelog</a></big>
+            </p>
+            <p>
+            <big><a href="https://github.com/edssb/rupauls-drag-race-simulator" target="_blank" id="inblock">GitHub page</a></big>
+            </p>
+            <p>
+                <big><a href="https://forms.gle/oLiR9E5xNKXt8zmPA" target="_blank" id="inblock">Suggest more lip-sync songs for the simulator!</a></big>
+            </p>
+            </p>
+            <p>
+                <big>Version number: 0.9.5</big>
+            </p>
+        </div>
     </div>
+
+    <div style="text-align: center; font-weight: bold;">
+        <p><small>This simulator was created by edssb/JustALittleKiller</small></p>
+        <p><small>If you find any bugs or have feedback, you can talk to me on  <a href="https://www.reddit.com/user/JustALittleKiller" target="_blank">Reddit</a>!</small></p>
+    </div>
+
     <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
     <script>
     kofiWidgetOverlay.draw('rupaulssimulator', {
         'type': 'floating-chat',
-        'floating-chat.donateButton.text': 'Tip edssb',
+        'floating-chat.donateButton.text': 'Tip Me',
         'floating-chat.donateButton.background-color': '#5bc0de',
         'floating-chat.donateButton.text-color': '#323842'
     });
