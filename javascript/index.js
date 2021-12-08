@@ -2644,8 +2644,9 @@ var rajah = new Queen("Ra'Jah O'Hara", 7, 8, 14, 13, 6, 10, 13, "img/AS6/RaJahOH
 var scarlet = new Queen("Scarlet Envy", 10, 8, 6, 9, 7, 9, 7, "img/AS6/ScarletEnvyAS6Cast.png");
 var shuga = new Queen("Shuga Cain", 8, 7, 7, 5, 7, 10, 7, "img/US11/ShugaCainS11Cast.jpg");
 var silky = new Queen("Silky Nutmeg Ganache", 8, 9, 7, 6, 9, 7, 7, "img/AS6/SilkyNutmegGanacheAS6Cast.png");
-var yvie = new Queen("Yvie Oddly", 10, 5, 8, 9, 5, 8, 14, "img/US11/YvieOddlyS11Cast.jpg");
-var us_season11 = [akeria, ariel, brooke, honeyd, kahanna, mercedes, ninaw, plastique, rajah, scarlet, shuga, silky, vanessa, yvie];
+let soju = new Queen("Soju", 3, 4, 3, 4, 3, 3, 3, "img/US11/SojuS11Cast.jpg");
+var = new Queen("Yvie Oddly", 10, 5, 8, 9, 5, 8, 14, "img/US11/YvieOddlyS11Cast.jpg");
+var us_season11 = [akeria, ariel, brooke, honeyd, kahanna, mercedes, ninaw, plastique, rajah, scarlet, shuga, silky, soju, vanessa, yvie];
 //SEASON 12
 var aiden = new Queen("Aiden Zhane", 9, 3, 6, 4, 3, 8, 7, "img/US12/AidenZhaneS12Cast.png");
 var brita = new Queen("Brita", 7, 6, 7, 4, 3, 7, 10, "img/US12/BritaS12Cast.png");
@@ -2863,7 +2864,7 @@ var allQueens = [
     acid, bob, chichi, cynthia, dax, derrick, kim, laila, naomi, naysha, robbie, thorgy,
     aja, alexism, charlie, eureka, farrah, jaymes, kimora, ninab, peppermint, sasha, shea, trinity, valentina,
     aquaria, asia, blair, dusty, kalorie, kameron, mayhem, miz, monet, monique, vanessa, vixen, yuhua,
-    akeria, ariel, brooke, honeyd, kahanna, mercedes, ninaw, plastique, rajah, scarlet, shuga, silky, yvie,
+    akeria, ariel, brooke, honeyd, kahanna, mercedes, ninaw, plastique, rajah, scarlet, shuga, silky, soju, yvie,
     aiden, brita, crystal, dahlia, gigi, heidi, jackie, jaida, jan, nicky, rock, sherry, widow,
     denali, elliott, mik, joey, kahmora, kandym, lala, olivia, rose, symone, tamisha, tina, utica,
     alyssaH, angeria, bosco, daya, deja, jasmineK, jorgeous, june, kerri, kornbread, cadmen, maddy, orion, willow,
