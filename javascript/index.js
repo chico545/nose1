@@ -2658,8 +2658,9 @@ var jaida = new Queen("Jaida Essence Hall", 7, 9, 9, 12, 9, 10, 11, "img/US12/Ja
 var jan = new Queen("Jan", 8, 7, 9, 7, 8, 8, 8, "img/AS6/JanAS6Cast.png");
 var nicky = new Queen("Nicky Doll", 4, 4, 7, 10, 3, 10, 5, "img/US12/NickyDollS12Cast.png");
 var rock = new Queen("Rock M. Sakura", 6, 8, 6, 7, 8, 8, 7, "img/US12/RockMSakuraS12Cast.png");
+var sherry = new Queen("Sherry Pie", 10, 10, 7, 6, 10, 8, 8, "img/US12/SherryPieS12Cast.png");
 var widow = new Queen("Widow Von'Du", 10, 9, 12, 8, 10, 8, 15, "img/US12/WidowVonDuS12Cast.png");
-var us_season12 = [aiden, brita, crystal, dahlia, gigi, heidi, jackie, jaida, jan, nicky, rock, widow];
+var us_season12 = [aiden, brita, crystal, dahlia, gigi, heidi, jackie, jaida, jan, nicky, rock, sherry, widow];
 //ALL STARS 5
 var allstars_5 = [alexis, blair, derrick, india, jujubee, mariah, mayhem, miz, ongina, shea];
 //SEASON 13
@@ -2863,7 +2864,7 @@ var allQueens = [
     aja, alexism, charlie, eureka, farrah, jaymes, kimora, ninab, peppermint, sasha, shea, trinity, valentina,
     aquaria, asia, blair, dusty, kalorie, kameron, mayhem, miz, monet, monique, vanessa, vixen, yuhua,
     akeria, ariel, brooke, honeyd, kahanna, mercedes, ninaw, plastique, rajah, scarlet, shuga, silky, yvie,
-    aiden, brita, crystal, dahlia, gigi, heidi, jackie, jaida, jan, nicky, rock, widow,
+    aiden, brita, crystal, dahlia, gigi, heidi, jackie, jaida, jan, nicky, rock, sherry, widow,
     denali, elliott, mik, joey, kahmora, kandym, lala, olivia, rose, symone, tamisha, tina, utica,
     alyssaH, angeria, bosco, daya, deja, jasmineK, jorgeous, june, kerri, kornbread, cadmen, maddy, orion, willow,
     baga, blu, cheryl, crystaluk, divina, gothy, scaredy, sumting, viv, vinegar,
